@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		/* Base Options: */
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "ES2022",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"isolatedModules": true,
+
+		/* Strictness */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+
+		/* If transpiling with TypeScript: */
+		"moduleResolution": "NodeNext",
+		"module": "NodeNext",
+		"outDir": "./dist",
+		"sourceMap": true,
+		"baseUrl": "./",
+		"incremental": true,
+		"forceConsistentCasingInFileNames": false,
+		"noFallthroughCasesInSwitch": false,
+
+		/* Other Options: */
+		"declaration": true,
+		"declarationMap": true
+	},
+	"include": ["src/**/*.ts", ".eslintrc.js"],
+	"exclude": ["node_modules", "dist"]
+}
