@@ -1,31 +1,24 @@
 {
 	"compilerOptions": {
-		/* Base Options: */
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"target": "ES2022",
-		"allowJs": true,
-		"resolveJsonModule": true,
-		"moduleDetection": "force",
+		/* Visit https://aka.ms/tsconfig to read more about this file */
+
+		/* Projects */
+
+		/* Language and Environment */
+		"module": "commonjs" /* Specify what module code is generated. */,
+		"target": "es2017" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": true,
 		"isolatedModules": true,
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"outDir": "./dist" /* Specify an output folder for all emitted files. */,
+		"esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+		"forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
 
-		/* Strictness */
-		"strict": true,
-		"noUncheckedIndexedAccess": true,
-
-		/* If transpiling with TypeScript: */
-		"moduleResolution": "NodeNext",
-		"module": "NodeNext",
-		"outDir": "./dist",
-		"sourceMap": true,
-		"baseUrl": "./",
-		"incremental": true,
-		"forceConsistentCasingInFileNames": false,
-		"noFallthroughCasesInSwitch": false,
-
-		/* Other Options: */
-		"declaration": true,
-		"declarationMap": true
+		/* Type Checking */
+		"strict": true /* Enable all strict type-checking options. */,
+		"skipLibCheck": true /* Skip type checking all .d.ts files. */
 	},
 	"include": ["src/**/*.ts", ".eslintrc.js"],
 	"exclude": ["node_modules", "dist"]

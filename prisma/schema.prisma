@@ -12,8 +12,16 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
 model User {
-  id      Int      @id @default(autoincrement())
-  email   String   @unique
-  name    String?
+  id    Int    @id @default(autoincrement())
+  email String @unique
+  ip    String
+  score Int
+}
+
+model Battle {
+  id        Int @id @default(autoincrement())
+  scoreWin  Int
+  scoreLose Int
 }
