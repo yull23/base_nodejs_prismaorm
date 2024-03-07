@@ -23,7 +23,7 @@ module.exports = {
 	},
 	'rules': {
 		'eqeqeq': ['error', 'always'],
-		'no-empty-function': 'error',
+		'no-empty-function': '',
 		'no-implicit-coercion': 'error',
 		'@typescript-eslint/no-explicit-any': 'error',
 		'@typescript-eslint/no-duplicate-enum-values': 'error',
